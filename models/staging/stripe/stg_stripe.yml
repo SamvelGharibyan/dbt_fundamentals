@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Staged payment data from our stripe app.
+    columns: 
+      - name: payment_id
+        description: The primary key for payments.
+      - name: order_id
+        description: The order id for which payment has been made.
+      - name: payment_method
+        description: The method payment has been made.
+      - name: status
+        description: The status of the payment.
+      - name: amount
+        description: The amount of the payment.   
+      - name: created_date
+        description: The created date of the payment.
+      - name: batched_date
+        description: The batched date of the payment.                
